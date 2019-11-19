@@ -1,0 +1,307 @@
+Age, Year ,Positive axillary node detected ,Survival
+30,64,1,survived More than 5 years
+30,62,3,survived More than 5 years
+30,65,0,survived More than 5 years
+31,59,2,survived More than 5 years
+31,65,4,survived More than 5 years
+33,58,10,survived More than 5 years
+33,60,0,survived More than 5 years
+34,59,0,died within 5 years
+34,66,9,died within 5 years
+34,58,30,survived More than 5 years
+34,60,1,survived More than 5 years
+34,61,10,survived More than 5 years
+34,67,7,survived More than 5 years
+34,60,0,survived More than 5 years
+35,64,13,survived More than 5 years
+35,63,0,survived More than 5 years
+36,60,1,survived More than 5 years
+36,69,0,survived More than 5 years
+37,60,0,survived More than 5 years
+37,63,0,survived More than 5 years
+37,58,0,survived More than 5 years
+37,59,6,survived More than 5 years
+37,60,15,survived More than 5 years
+37,63,0,survived More than 5 years
+38,69,21,died within 5 years
+38,59,2,survived More than 5 years
+38,60,0,survived More than 5 years
+38,60,0,survived More than 5 years
+38,62,3,survived More than 5 years
+38,64,1,survived More than 5 years
+38,66,0,survived More than 5 years
+38,66,11,survived More than 5 years
+38,60,1,survived More than 5 years
+38,67,5,survived More than 5 years
+39,66,0,died within 5 years
+39,63,0,survived More than 5 years
+39,67,0,survived More than 5 years
+39,58,0,survived More than 5 years
+39,59,2,survived More than 5 years
+39,63,4,survived More than 5 years
+40,58,2,survived More than 5 years
+40,58,0,survived More than 5 years
+40,65,0,survived More than 5 years
+41,60,23,died within 5 years
+41,64,0,died within 5 years
+41,67,0,died within 5 years
+41,58,0,survived More than 5 years
+41,59,8,survived More than 5 years
+41,59,0,survived More than 5 years
+41,64,0,survived More than 5 years
+41,69,8,survived More than 5 years
+41,65,0,survived More than 5 years
+41,65,0,survived More than 5 years
+42,69,1,died within 5 years
+42,59,0,died within 5 years
+42,58,0,survived More than 5 years
+42,60,1,survived More than 5 years
+42,59,2,survived More than 5 years
+42,61,4,survived More than 5 years
+42,62,20,survived More than 5 years
+42,65,0,survived More than 5 years
+42,63,1,survived More than 5 years
+43,58,52,died within 5 years
+43,59,2,died within 5 years
+43,64,0,died within 5 years
+43,64,0,died within 5 years
+43,63,14,survived More than 5 years
+43,64,2,survived More than 5 years
+43,64,3,survived More than 5 years
+43,60,0,survived More than 5 years
+43,63,2,survived More than 5 years
+43,65,0,survived More than 5 years
+43,66,4,survived More than 5 years
+44,64,6,died within 5 years
+44,58,9,died within 5 years
+44,63,19,died within 5 years
+44,61,0,survived More than 5 years
+44,63,1,survived More than 5 years
+44,61,0,survived More than 5 years
+44,67,16,survived More than 5 years
+45,65,6,died within 5 years
+45,66,0,died within 5 years
+45,67,1,died within 5 years
+45,60,0,survived More than 5 years
+45,67,0,survived More than 5 years
+45,59,14,survived More than 5 years
+45,64,0,survived More than 5 years
+45,68,0,survived More than 5 years
+45,67,1,survived More than 5 years
+46,58,2,died within 5 years
+46,69,3,died within 5 years
+46,62,5,died within 5 years
+46,65,20,died within 5 years
+46,62,0,survived More than 5 years
+46,58,3,survived More than 5 years
+46,63,0,survived More than 5 years
+47,63,23,died within 5 years
+47,62,0,died within 5 years
+47,65,0,died within 5 years
+47,61,0,survived More than 5 years
+47,63,6,survived More than 5 years
+47,66,0,survived More than 5 years
+47,67,0,survived More than 5 years
+47,58,3,survived More than 5 years
+47,60,4,survived More than 5 years
+47,68,4,survived More than 5 years
+47,66,12,survived More than 5 years
+48,58,11,died within 5 years
+48,58,11,died within 5 years
+48,67,7,died within 5 years
+48,61,8,survived More than 5 years
+48,62,2,survived More than 5 years
+48,64,0,survived More than 5 years
+48,66,0,survived More than 5 years
+49,63,0,died within 5 years
+49,64,10,died within 5 years
+49,61,1,survived More than 5 years
+49,62,0,survived More than 5 years
+49,66,0,survived More than 5 years
+49,60,1,survived More than 5 years
+49,62,1,survived More than 5 years
+49,63,3,survived More than 5 years
+49,61,0,survived More than 5 years
+49,67,1,survived More than 5 years
+50,63,13,died within 5 years
+50,64,0,died within 5 years
+50,59,0,survived More than 5 years
+50,61,6,survived More than 5 years
+50,61,0,survived More than 5 years
+50,63,1,survived More than 5 years
+50,58,1,survived More than 5 years
+50,59,2,survived More than 5 years
+50,61,0,survived More than 5 years
+50,64,0,survived More than 5 years
+50,65,4,survived More than 5 years
+50,66,1,survived More than 5 years
+51,59,13,died within 5 years
+51,59,3,died within 5 years
+51,64,7,survived More than 5 years
+51,59,1,survived More than 5 years
+51,65,0,survived More than 5 years
+51,66,1,survived More than 5 years
+52,69,3,died within 5 years
+52,59,2,died within 5 years
+52,62,3,died within 5 years
+52,66,4,died within 5 years
+52,61,0,survived More than 5 years
+52,63,4,survived More than 5 years
+52,69,0,survived More than 5 years
+52,60,4,survived More than 5 years
+52,60,5,survived More than 5 years
+52,62,0,survived More than 5 years
+52,62,1,survived More than 5 years
+52,64,0,survived More than 5 years
+52,65,0,survived More than 5 years
+52,68,0,survived More than 5 years
+53,58,4,died within 5 years
+53,65,1,died within 5 years
+53,59,3,died within 5 years
+53,60,9,died within 5 years
+53,63,24,died within 5 years
+53,65,12,died within 5 years
+53,58,1,survived More than 5 years
+53,60,1,survived More than 5 years
+53,60,2,survived More than 5 years
+53,61,1,survived More than 5 years
+53,63,0,survived More than 5 years
+54,60,11,died within 5 years
+54,65,23,died within 5 years
+54,65,5,died within 5 years
+54,68,7,died within 5 years
+54,59,7,survived More than 5 years
+54,60,3,survived More than 5 years
+54,66,0,survived More than 5 years
+54,67,46,survived More than 5 years
+54,62,0,survived More than 5 years
+54,69,7,survived More than 5 years
+54,63,19,survived More than 5 years
+54,58,1,survived More than 5 years
+54,62,0,survived More than 5 years
+55,63,6,died within 5 years
+55,68,15,died within 5 years
+55,58,1,survived More than 5 years
+55,58,0,survived More than 5 years
+55,58,1,survived More than 5 years
+55,66,18,survived More than 5 years
+55,66,0,survived More than 5 years
+55,69,3,survived More than 5 years
+55,69,22,survived More than 5 years
+55,67,1,survived More than 5 years
+56,65,9,died within 5 years
+56,66,3,died within 5 years
+56,60,0,survived More than 5 years
+56,66,2,survived More than 5 years
+56,66,1,survived More than 5 years
+56,67,0,survived More than 5 years
+56,60,0,survived More than 5 years
+57,61,5,died within 5 years
+57,62,14,died within 5 years
+57,64,1,died within 5 years
+57,64,9,survived More than 5 years
+57,69,0,survived More than 5 years
+57,61,0,survived More than 5 years
+57,62,0,survived More than 5 years
+57,63,0,survived More than 5 years
+57,64,0,survived More than 5 years
+57,64,0,survived More than 5 years
+57,67,0,survived More than 5 years
+58,59,0,survived More than 5 years
+58,60,3,survived More than 5 years
+58,61,1,survived More than 5 years
+58,67,0,survived More than 5 years
+58,58,0,survived More than 5 years
+58,58,3,survived More than 5 years
+58,61,2,survived More than 5 years
+59,62,35,died within 5 years
+59,60,0,survived More than 5 years
+59,63,0,survived More than 5 years
+59,64,1,survived More than 5 years
+59,64,4,survived More than 5 years
+59,64,0,survived More than 5 years
+59,64,7,survived More than 5 years
+59,67,3,survived More than 5 years
+60,59,17,died within 5 years
+60,65,0,died within 5 years
+60,61,1,survived More than 5 years
+60,67,2,survived More than 5 years
+60,61,25,survived More than 5 years
+60,64,0,survived More than 5 years
+61,62,5,died within 5 years
+61,65,0,died within 5 years
+61,68,1,died within 5 years
+61,59,0,survived More than 5 years
+61,59,0,survived More than 5 years
+61,64,0,survived More than 5 years
+61,65,8,survived More than 5 years
+61,68,0,survived More than 5 years
+61,59,0,survived More than 5 years
+62,59,13,died within 5 years
+62,58,0,died within 5 years
+62,65,19,died within 5 years
+62,62,6,survived More than 5 years
+62,66,0,survived More than 5 years
+62,66,0,survived More than 5 years
+62,58,0,survived More than 5 years
+63,60,1,died within 5 years
+63,61,0,survived More than 5 years
+63,62,0,survived More than 5 years
+63,63,0,survived More than 5 years
+63,63,0,survived More than 5 years
+63,66,0,survived More than 5 years
+63,61,9,survived More than 5 years
+63,61,28,survived More than 5 years
+64,58,0,survived More than 5 years
+64,65,22,survived More than 5 years
+64,66,0,survived More than 5 years
+64,61,0,survived More than 5 years
+64,68,0,survived More than 5 years
+65,58,0,died within 5 years
+65,61,2,died within 5 years
+65,62,22,died within 5 years
+65,66,15,died within 5 years
+65,58,0,survived More than 5 years
+65,64,0,survived More than 5 years
+65,67,0,survived More than 5 years
+65,59,2,survived More than 5 years
+65,64,0,survived More than 5 years
+65,67,1,survived More than 5 years
+66,58,0,died within 5 years
+66,61,13,died within 5 years
+66,58,0,survived More than 5 years
+66,58,1,survived More than 5 years
+66,68,0,survived More than 5 years
+67,64,8,died within 5 years
+67,63,1,died within 5 years
+67,66,0,survived More than 5 years
+67,66,0,survived More than 5 years
+67,61,0,survived More than 5 years
+67,65,0,survived More than 5 years
+68,67,0,survived More than 5 years
+68,68,0,survived More than 5 years
+69,67,8,died within 5 years
+69,60,0,survived More than 5 years
+69,65,0,survived More than 5 years
+69,66,0,survived More than 5 years
+70,58,0,died within 5 years
+70,58,4,died within 5 years
+70,66,14,survived More than 5 years
+70,67,0,survived More than 5 years
+70,68,0,survived More than 5 years
+70,59,8,survived More than 5 years
+70,63,0,survived More than 5 years
+71,68,2,survived More than 5 years
+72,63,0,died within 5 years
+72,58,0,survived More than 5 years
+72,64,0,survived More than 5 years
+72,67,3,survived More than 5 years
+73,62,0,survived More than 5 years
+73,68,0,survived More than 5 years
+74,65,3,died within 5 years
+74,63,0,survived More than 5 years
+75,62,1,survived More than 5 years
+76,67,0,survived More than 5 years
+77,65,3,survived More than 5 years
+78,65,1,died within 5 years
+83,58,2,died within 5 years
