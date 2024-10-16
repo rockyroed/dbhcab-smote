@@ -817,66 +817,66 @@ public class DBHCABSMOTE extends Filter implements SupervisedFilter, OptionHandl
         Set extraIndexSet = new HashSet(extraIndices);
 
         // the main loop to handle computing nearest neighbors and generating DBHCABSMOTE
-//        for (int i = Majority.numInstances() - 1; i >= 0; i--)   // remove majority border from MajNonDanger
-//        {
-//            System.out.println("Majority number instance " + i);
-//            RemoveRange remove = new RemoveRange();
-//            remove.setInputFormat(MajNonDanger);
-//            remove.setInvertSelection(false);
-//            Instance instanceI = Majority.instance(i);
-//
-//            // find k nearest neighbors for each instance
-//            List distanceToInstance = new LinkedList();
-//            for (int j = 0; j < total.numInstances(); j++) {
-//                Instance instanceJ = total.instance(j);
-//                if (i != j) {
-//                    double distance = 0;
-//                    attrEnum = getInputFormat().enumerateAttributes();
-//                    while (attrEnum.hasMoreElements()) {
-//                        Attribute attr = (Attribute) attrEnum.nextElement();
-//                        if (!attr.equals(getInputFormat().classAttribute())) {
-//                            double iVal = instanceI.value(attr);
-//                            double jVal = instanceJ.value(attr);
-//                            if (attr.isNumeric()) {
-//                                distance += Math.pow(iVal - jVal, 2);
-//                            } else {
-//                                distance += ((double[][]) vdmMap.get(attr))[(int) iVal][(int) jVal];
-//                            }
-//                        }
-//                    }
-//                    distance = Math.pow(distance, .5);
-//                    distanceToInstance.add(new Object[]{distance, instanceJ});
-//                }
-//            }
-//
-//            // sort the neighbors according to distance
-//            Collections.sort(distanceToInstance, new Comparator() {
-//                public int compare(Object o1, Object o2) {
-//                    double distance1 = (Double) ((Object[]) o1)[0];
-//                    double distance2 = (Double) ((Object[]) o2)[0];
-//                    return Double.compare(distance1, distance2);
-//                }
-//            });
-//
-//            // populate the actual nearest neighbor instance array
-//            Iterator entryIterator = distanceToInstance.iterator();
-//            int j = 0;
-//            int mm = 0; // m' ( number of Minority samples)
-//
-//            while (entryIterator.hasNext() && j < nearestNeighbors) {
-//                Instance inst = (Instance) ((Object[]) entryIterator.next())[1];
-//                int clsI = (int) inst.classValue();
-//                if (clsI == minIndex)
-//                    mm++;
-//                j++;
-//            }
-//
-//            // remove of Majority borderline instance , and create MajNonDanger which consist of majority instances without maj borderline instance
-//            if (mm >= (nearestNeighbors / 2) && mm < nearestNeighbors) {
-//                remove.setInstancesIndices("" + (i + 1));
-//                MajNonDanger = Filter.useFilter(MajNonDanger, remove);
-//            }
-//        }
+       for (int i = Majority.numInstances() - 1; i >= 0; i--)   // remove majority border from MajNonDanger
+       {
+           System.out.println("Majority number instance " + i);
+           RemoveRange remove = new RemoveRange();
+           remove.setInputFormat(MajNonDanger);
+           remove.setInvertSelection(false);
+           Instance instanceI = Majority.instance(i);
+
+           // find k nearest neighbors for each instance
+           List distanceToInstance = new LinkedList();
+           for (int j = 0; j < total.numInstances(); j++) {
+               Instance instanceJ = total.instance(j);
+               if (i != j) {
+                   double distance = 0;
+                   attrEnum = getInputFormat().enumerateAttributes();
+                   while (attrEnum.hasMoreElements()) {
+                       Attribute attr = (Attribute) attrEnum.nextElement();
+                       if (!attr.equals(getInputFormat().classAttribute())) {
+                           double iVal = instanceI.value(attr);
+                           double jVal = instanceJ.value(attr);
+                           if (attr.isNumeric()) {
+                               distance += Math.pow(iVal - jVal, 2);
+                           } else {
+                               distance += ((double[][]) vdmMap.get(attr))[(int) iVal][(int) jVal];
+                           }
+                       }
+                   }
+                   distance = Math.pow(distance, .5);
+                   distanceToInstance.add(new Object[]{distance, instanceJ});
+               }
+           }
+
+           // sort the neighbors according to distance
+           Collections.sort(distanceToInstance, new Comparator() {
+               public int compare(Object o1, Object o2) {
+                   double distance1 = (Double) ((Object[]) o1)[0];
+                   double distance2 = (Double) ((Object[]) o2)[0];
+                   return Double.compare(distance1, distance2);
+               }
+           });
+
+           // populate the actual nearest neighbor instance array
+           Iterator entryIterator = distanceToInstance.iterator();
+           int j = 0;
+           int mm = 0; // m' ( number of Minority samples)
+
+           while (entryIterator.hasNext() && j < nearestNeighbors) {
+               Instance inst = (Instance) ((Object[]) entryIterator.next())[1];
+               int clsI = (int) inst.classValue();
+               if (clsI == minIndex)
+                   mm++;
+               j++;
+           }
+
+           // remove of Majority borderline instance , and create MajNonDanger which consist of majority instances without maj borderline instance
+           if (mm >= (nearestNeighbors / 2) && mm < nearestNeighbors) {
+               remove.setInstancesIndices("" + (i + 1));
+               MajNonDanger = Filter.useFilter(MajNonDanger, remove);
+           }
+       }
 
         System.out.println("\n");
         for (int i = 0; i < Minority.numInstances(); i++) {
