@@ -698,6 +698,7 @@ public class HCABSMOTE extends Filter implements SupervisedFilter, OptionHandler
      *                   on input instances
      */
     protected void doHCABSMOTE() throws Exception {
+        long startTime = System.nanoTime();
         /**
          * Prints the parameter input for checking
          */
@@ -900,6 +901,7 @@ public class HCABSMOTE extends Filter implements SupervisedFilter, OptionHandler
 
 
         //   for (int i = Minority.numInstances() -1; i >= 0; i--)
+        long knnStartTime = System.nanoTime();
         System.out.println("\n");
         for (int i = 0; i < Minority.numInstances(); i++) {
             if ((i + 1) % 100 == 1) {
@@ -964,6 +966,7 @@ public class HCABSMOTE extends Filter implements SupervisedFilter, OptionHandler
             } else
                 MinNonDanger.add(instanceI);
         }
+        long knnEndTime = System.nanoTime();
 
         System.out.println("\n\nNumber of mindanger instances: " + mindanger.size());
 
@@ -1177,6 +1180,13 @@ public class HCABSMOTE extends Filter implements SupervisedFilter, OptionHandler
         writer.flush();
         writer.close();
         System.out.println("The new generated dataset file is exported to into the data folder.");
+        long endTime = System.nanoTime();
+
+        double executionDuration = (endTime - startTime) / 1_000_000_000.0;
+        double knnExecutionDuration = (knnEndTime - knnStartTime) / 1_000_000_000.0;
+
+        System.out.println("Execution time: " + executionDuration + " seconds");
+        System.out.println("KNN Execution time: " + knnExecutionDuration + " seconds");
 
 
     }

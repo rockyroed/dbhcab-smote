@@ -683,6 +683,7 @@ public class DBHCABSMOTE extends Filter implements SupervisedFilter, OptionHandl
      *                   on input instances
      */
     protected void doDBHCABSMOTE() throws Exception {
+        long startTime = System.nanoTime();
         /**
          * Prints the parameter input for checking
          */
@@ -879,6 +880,7 @@ public class DBHCABSMOTE extends Filter implements SupervisedFilter, OptionHandl
 //        }
 
         System.out.println("\n");
+        long knnStartTime = System.nanoTime();
         for (int i = 0; i < Minority.numInstances(); i++) {
             if ((i + 1) % 100 == 1) {
                 System.out.println("Minority number instance " + (i + 1) + "/" + Minority.numInstances());
@@ -937,6 +939,7 @@ public class DBHCABSMOTE extends Filter implements SupervisedFilter, OptionHandl
             } else
                 MinNonDanger.add(instanceI);
         }
+        long knnEndTime = System.nanoTime();
 
         System.out.println("\n\nNumber of mindanger instances: " + mindanger.size());
 
@@ -1150,6 +1153,13 @@ public class DBHCABSMOTE extends Filter implements SupervisedFilter, OptionHandl
         writer.flush();
         writer.close();
         System.out.println("The new generated dataset file is exported to into the data folder.");
+        long endTime = System.nanoTime();
+
+        double executionDuration = (endTime - startTime) / 1_000_000_000.0;
+        double knnExecutionDuration = (knnEndTime - knnStartTime) / 1_000_000_000.0;
+
+        System.out.println("Execution time: " + executionDuration + " seconds");
+        System.out.println("KNN Execution time: " + knnExecutionDuration + " seconds");
     }
 
     /**
